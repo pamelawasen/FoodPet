@@ -1,0 +1,15 @@
+﻿@Model FoodPetWebApi.Models.LoginModel
+@{
+    ViewBag.Title = "Log In";
+}
+
+<h2>Login</h2>
+
+Html.ValidationSummary(true)
+@using (Html.BeginForm())
+{
+    @Html.EditorForModel()
+    <p>
+        <button type="submit">login</button>
+    </p>
+        }
